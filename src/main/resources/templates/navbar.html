@@ -1,0 +1,31 @@
+<nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" th:href="@{/home}" href="/home.html">Tienda Virtual</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" th:href="@{/home}" href="/home.html">Inicio <span class="sr-only">(actual)</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Características
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" th:href="@{/marketing}" href="marketing.html">Marketing</a></li>
+                  <li><a class="dropdown-item" th:href="@{/ventas}" href="ventas.html">Ventas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" th:href="@{/usuarios}" href="usuarios.html">Usuarios</a></li>
+                  <li><a class="dropdown-item" th:href="@{/help}" href="help.html">Ayuda</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit" title="Buscar">Buscar</button>
+        </form>
+    </div>
+</nav>    

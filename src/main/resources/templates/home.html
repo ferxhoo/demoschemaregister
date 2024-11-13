@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cargar el archivo CSS de Bootstrap -->
+    <th:block th:replace="~{bootstrap-css.html}"></th:block>
+    <title>Home - Tienda Virtual</title>
+<body>
+    <!-- Cargar la barra de navegación -->
+    <div th:replace="~{navbar :: navbar}"></div>
+    <!-- Contenido principal de la página de inicio -->
+    <div class="container my-5">
+        <!-- Bienvenida y descripción de la tienda -->
+        <section class="text-center mb-5">
+            <h1 class="display-4">¡Bienvenido a Nuestra Tienda Virtual!</h1>
+            <p class="lead">Tu destino en línea para productos de calidad a precios accesibles.</p>
+            <p>Descubre una amplia selección de artículos, desde electrónica y moda hasta hogar y más. Nuestro compromiso es ofrecerte la mejor experiencia de compra.</p>
+        </section>
+
+        <!-- Sección de categorías destacadas -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Explora Nuestras Categorías</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Electrónica">
+                        <div class="card-body">
+                            <h5 class="card-title">Electrónica</h5>
+                            <p class="card-text">Encuentra lo último en tecnología con los mejores precios y garantía.</p>
+                            <a th:href="@{/marketing}" href="marketing.html" class="btn btn-primary">Ver Electrónica</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Moda">
+                        <div class="card-body">
+                            <h5 class="card-title">Moda</h5>
+                            <p class="card-text">Actualiza tu estilo con nuestras colecciones de temporada.</p>
+                            <a th:href="@{/marketing}" href="marketing.html" class="btn btn-primary">Ver Moda</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Hogar">
+                        <div class="card-body">
+                            <h5 class="card-title">Hogar</h5>
+                            <p class="card-text">Productos para el hogar que combinan calidad y diseño.</p>
+                            <a th:href="@{/marketing}" href="marketing.html" class="btn btn-primary">Ver Hogar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beneficios de la tienda -->
+        <section class="text-center bg-light p-4 rounded mb-5">
+            <h2>¿Por Qué Elegirnos?</h2>
+            <p class="mt-3">Ofrecemos envío rápido, soporte al cliente 24/7 y garantía de satisfacción en cada compra. Únete a miles de clientes felices que confían en nosotros.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item m-3"><strong>🚚 Envío Rápido</strong></li>
+                <li class="list-inline-item m-3"><strong>💬 Soporte 24/7</strong></li>
+                <li class="list-inline-item m-3"><strong>✅ Garantía de Satisfacción</strong></li>
+            </ul>
+        </section>
+
+        <!-- Invitación a explorar el catálogo -->
+        <section class="text-center">
+            <h2 class="mb-4">Explora Nuestro Catálogo Completo</h2>
+            <p>Encuentra productos únicos y ofertas especiales. Desde lo esencial hasta lo exclusivo, tenemos algo para todos.</p>
+            <a th:href="@{/marketing}" href="marketing.html" class="btn btn-lg btn-success">Ir al Catálogo</a>
+        </section>
+    </div>
+
+    <!-- Cargar los scripts de Bootstrap -->
+    <th:block th:replace="~{bootstrap-js.html}"></th:block>
+</body>
+</html>
